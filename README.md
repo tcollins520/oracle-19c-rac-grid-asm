@@ -8,9 +8,6 @@ This project documents the complete installation and configuration of a two-node
 
 | Component | Configuration |
 |---|---|
-| Host | MacBook Air M5 |
-| Virtualization | VirtualBox 7.2 |
-| Provisioning | Vagrant 2.4.9 |
 | Operating System | Oracle Linux 8.10 ARM64 |
 | Database | Oracle Database 19c 19.19 ARM64 |
 | Cluster | 2-node Oracle RAC |
@@ -33,17 +30,18 @@ This project documents the complete installation and configuration of a two-node
 | rac2 | 192.168.56.12 | 192.168.57.12 | 192.168.56.22 |
 
 ### SCAN
-
+~~~
 orarac-scan
 192.168.56.31
 192.168.56.32
 192.168.56.33
-
+~~~
 ### Network Interfaces
-
+~~~
 eth0 → NAT / Internet
 eth1 → Public RAC network
 eth2 → Private RAC interconnect
+~~~
 
 ## Shared Storage
 
@@ -60,11 +58,11 @@ DATA01
 FRA01
 
 ASM discovery:
-
+~~~
 ORCL:CRS01
 ORCL:DATA01
 ORCL:FRA01
-
+~~~
 # Installation & Configuration
 
 1. Oracle Linux 8.10 ARM64 RAC node preparation and OS configuration
@@ -190,7 +188,7 @@ The repository includes installation and administration documentation covering t
 - RAC validation
 
 ## Project Objectives
-
+~~~
 The objective of this project was to build a complete Oracle 19c RAC environment from the infrastructure layer through database deployment and validation.
 
 Infrastructure
@@ -214,15 +212,7 @@ Oracle Database 19c RAC
 CDB / PDB
     ↓
 Validation & Administration
-
-## Lab Notes
-
-This is a hands-on laboratory environment built with Vagrant and VirtualBox.
-
-The environment uses a local /etc/hosts configuration for RAC name resolution. SCAN DNS/NIS prerequisite warnings were therefore treated as known lab-specific conditions.
-
-The environment is intended for learning, testing, documentation, and demonstration purposes rather than production deployment.
-
+```
 ## Project Focus
 
 Oracle Database Administration | Oracle RAC | Grid Infrastructure | ASM | Linux | Cloud/Infrastructure Engineering
