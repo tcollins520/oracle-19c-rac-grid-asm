@@ -48,8 +48,8 @@ eth2 → Private RAC interconnect
 | Disk | Size | ASM Disk Group | Purpose |
 |---|---:|---|---|
 | CRS01 | 4 GB | +CRS | Clusterware / Voting |
-| DATA01 | 20 GB | +DATA | Database files |
-| FRA01 | 20 GB | +FRA | Fast Recovery Area |
+| DATA01 | 20 GB | +DATA | Database files, Controlfiles, Spfile, Redo Log Files |
+| FRA01 | 20 GB | +FRA |RMAN Backups, Fast Recovery Area |
 
 ASMLIB labels:
 
