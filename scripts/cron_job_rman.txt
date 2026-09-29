@@ -1,0 +1,28 @@
+# Backup Location:
+#   +FRA/ORCL/RMAN
+#
+# IMPORTANT:
+#   RMAN jobs are scheduled on RAC1 only.
+#
+###############################################################################
+
+##############################
+# Weekly Level 0 Backup
+##############################
+# Sunday at 01:00 AM
+
+0 1 * * 0 /home/oracle/rman_scripts/rman_backup_level0.sh
+
+##############################
+# Daily Level 1 Backup
+##############################
+# Monday through Saturday at 01:00 AM
+
+0 1 * * 1-6 /home/oracle/rman_scripts/rman_backup_level1.sh
+
+##############################
+# Daily RMAN Maintenance
+##############################
+# Every day at 03:00 AM
+
+0 3 * * * /home/oracle/rman_scripts/rman_maintenance.sh
