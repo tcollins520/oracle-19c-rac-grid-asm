@@ -1,6 +1,6 @@
 # Oracle 19c RAC, Grid Infrastructure & ASM
 
-A hands-on Oracle Database 19c Real Application Clusters (RAC) implementation using Oracle Grid Infrastructure, ASM, ASMLIB, Vagrant, and VirtualBox.
+A hands-on Oracle Database 19c Real Application Clusters (RAC) implementation using Oracle Grid Infrastructure, ASM, and ASMLIB.
 
 This project documents the complete installation and configuration of a two-node Oracle 19c RAC environment running on Oracle Linux 8.10 ARM64.
 
@@ -48,7 +48,7 @@ eth2 → Private RAC interconnect
 | Disk | Size | ASM Disk Group | Purpose |
 |---|---:|---|---|
 | CRS01 | 4 GB | +CRS | Clusterware / Voting |
-| DATA01 | 20 GB | +DATA | Database files, Controlfiles, Spfile, Redo Log Files |
+| DATA01 | 20 GB | +DATA | Database files, Controlfiles, and Spfile |
 | FRA01 | 20 GB | +FRA |RMAN Backups, Fast Recovery Area |
 
 ASMLIB labels:
